@@ -40,6 +40,26 @@
         width: 100%;
         height: auto;
       }
+
+      caption {
+        caption-side: top;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      th {
+        background-color: #343a40;
+        color: white;
+      }
+
+      tbody tr:nth-child(even) {
+       background-color: #f2f2f2;
+      }
+
+      tbody tr:hover {
+       background-color: #cce5ff;
+      }
     </style>
   </head>
 
@@ -89,6 +109,59 @@
     <div class="thumbnail">
       <img src="latte.jpg" alt="Latte">
     </div>
+  </div>
+
+  <!-- Container for Table -->
+  <div class="container mt-4">
+    <table class="table">
+      <caption>Drinks, Stars, and Fish</caption>
+      <thead>
+        <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">Drink</th>
+          <th scope="col">Star Name</th>
+          <th scope="col">Fish</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">B</th>
+          <td>Beer</td>
+          <td>Betelgeuse</td>
+          <td>Betta</td>
+        </tr>
+        <tr>
+          <th scope="row">A</th>
+          <td>Amaretto Sour</td>
+          <td>Aldebaran</td>
+          <td>Angelfish</td>
+        </tr>
+        <tr>
+          <th scope="row">L</th>
+          <td>Latte</td>
+          <td>Lyra</td>
+          <td>Lionfish</td>
+        </tr>
+        <tr>
+          <th scope="row">E</th>
+          <td>Espresso</td>
+          <td>Enif</td>
+          <td>Eel</td>
+        </tr>
+        <tr>
+          <th scope="row">S</th>
+          <td>Sangria</td>
+          <td>Sirius</td>
+          <td>Salmon</td>
+        </tr>
+        <tr>
+          <th scope="row">K</th>
+          <td>Kahlua and Cream</td>
+          <td>Kochab</td>
+          <td>Koi</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </body>
